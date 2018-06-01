@@ -1,15 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
+<h1>精神と時の部屋</h1>
+<h2>id = {{ $task->id }} の修行詳細ページ</h2>
 
-<h1>id = {{ $task->id }} のタスク詳細ページ</h1>
+    <p>進捗状況: {{ $task->status }}</p>
+    <p>修行: {{ $task->content }}</p>
 
-    <p>{{ $task->content }}</p>
-
-    {!! link_to_route('tasks.edit', 'このタスクを編集', ['id' => $task->id]) !!}
+    {!! link_to_route('tasks.edit', 'この修行を編集', ['id' => $task->id]) !!}
     
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
-        {!! Form::submit('削除') !!}
+        {!! Form::submit('この修行を削除') !!}
     {!! Form::close() !!}
  
 @endsection
