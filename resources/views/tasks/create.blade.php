@@ -18,7 +18,7 @@
                 {!! Form::text('content', null, ['class' => 'form-control', 'placeholder' => 'かめはめ波']) !!}
             </div>
     
-            {!! Form::submit('ピッコロさんに修行をつけてもらう', ['class' => 'btn btn-primary']) !!}
+            {!! Form::submit('界王様に修行をつけてもらう', ['class' => 'btn btn-primary']) !!}
     
         {!! Form::close() !!}
     </div>
