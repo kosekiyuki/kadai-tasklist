@@ -3,7 +3,9 @@
 @section('content')
 <h1>精神と時の部屋</h1>
 <h2>修行一覧</h2>
+
     <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+        
     @if (count($tasks) > 0)
         <table class="table table-striped">
             <thead>
@@ -26,5 +28,6 @@
     @endif
     
     {!! link_to_route('tasks.create', '新しい修行を始める', null, ['class' => 'btn btn-primary']) !!}
+    
     </div>
 @endsection
