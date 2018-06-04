@@ -7,13 +7,17 @@
 <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
     
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
-
-        {!! Form::label('status', '名前（種族）:') !!}
-        {!! Form::text('status') !!}
+    
+        <div class="form-group">
+            {!! Form::label('status', '名前（種族）:') !!}
+            {!! Form::text('status') !!}
+        </div>
         
-        {!! Form::label('content', '修行:') !!}
-        {!! Form::text('content') !!}
-
+        <div class="form-group">
+            {!! Form::label('content', '修行:') !!}
+            {!! Form::text('content') !!}
+        </div>
+        
         {!! Form::submit('更新') !!}
 
     {!! Form::close() !!}
