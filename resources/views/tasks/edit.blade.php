@@ -6,7 +6,7 @@
 
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
 
-        {!! Form::label('status', '進捗状況:') !!}
+        {!! Form::label('status', '名前（種族）:') !!}
         {!! Form::text('status') !!}
         
         {!! Form::label('content', '修行:') !!}
