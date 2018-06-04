@@ -16,7 +16,7 @@
             
             <div class="form-group">
                 <!--add placeholder-->
-                {!! Form::label('content', '修行:') !!}
+                {!! Form::label('content', '修行') !!}
                 {!! Form::text('content', null, ['class' => 'form-control', 'placeholder' => 'かめはめ波']) !!}
             </div>
     

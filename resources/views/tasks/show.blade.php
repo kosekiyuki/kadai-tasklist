@@ -20,10 +20,10 @@
         </tr>
     </table>
 
-    {!! link_to_route('tasks.edit', 'この修行を変える', ['id' => $task->id], ['class' => 'btn btn-default']) !!}
+    {!! link_to_route('tasks.edit', 'この修行を変える', ['id' => $task->id], ['class' => 'btn btn-default glyphicon glyphicon-pencil']) !!}
     
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
-        {!! Form::submit('この修行をやめる', ['class' => 'btn btn-danger']) !!}
+        {!! Form::submit('この修行をやめる', ['class' => 'btn btn-danger glyphicon glyphicon-trash']) !!}
     {!! Form::close() !!}
     </div>
     

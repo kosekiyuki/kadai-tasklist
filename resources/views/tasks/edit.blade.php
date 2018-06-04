@@ -10,12 +10,12 @@
         {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
         
             <div class="form-group">
-                {!! Form::label('status', '名前（種族）:') !!}
+                {!! Form::label('status', '名前（種族）') !!}
                 {!! Form::text('status',null, ['class' => 'form-control', 'placeholder' => '孫悟空（サイヤ人）']) !!}
             </div>
             
             <div class="form-group">
-                {!! Form::label('content', '修行:') !!}
+                {!! Form::label('content', '修行') !!}
                 {!! Form::text('content', null, ['class' => 'form-control', 'placeholder' => 'かめはめ波']) !!}
             </div>
             
