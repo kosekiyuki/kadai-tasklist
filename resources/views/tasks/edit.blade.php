@@ -19,7 +19,7 @@
                 {!! Form::text('content', null, ['class' => 'form-control', 'placeholder' => 'かめはめ波']) !!}
             </div>
             
-            {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}
+            {!! Form::submit('更新', ['class' => 'btn btn-info']) !!}
      
         {!! Form::close() !!}
     
