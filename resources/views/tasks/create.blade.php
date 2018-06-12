@@ -1,6 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
+
+<!--CSS-->
+<style>
+    
+</style>
+
+
 <h1>精神と時の部屋</h1>
 <h2>新しい修行の追加ページ</h2>
 <div class="row">
